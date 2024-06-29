@@ -1,9 +1,9 @@
-# Swahili Tokenization
+# SwaLLM Tokenization
 
 - I will update the readme.md with more information
 
 ## Syllabic Tokenization with Byte Fallback
-- Syllabic Tokenization with Byte Fallbacks allows the foreign elements in the text.
+- Syllabic Tokenization with Byte Fallbacks allows the non-swahili elements in the text.
 - Inspiration through SentencePiece. <sup> Will add citation </sup>
 - The resultant vocabulary size is small, approximately 1200.
 ### Syllabic Tokenization
