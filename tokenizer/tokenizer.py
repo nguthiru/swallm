@@ -20,7 +20,7 @@ class SwahiliTokenizer(BaseTokenizer):
 
 tokenizer = SwahiliTokenizer('lib/spm_swahili_32k.model')
 
-tokens = tokenizer.tokenize('unajua kiswahili?')
+tokens = tokenizer.tokenize('uliopatikana')
 
 print(tokens)
 
