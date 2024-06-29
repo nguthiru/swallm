@@ -26,7 +26,7 @@ class SyllabicTokenizer(BaseTokenizer):
         else:
             with open("silabi_vocab.json", "r") as f:
                 self.vocab = json.load(f)
-        self.reverse_vocab = {v: k for k, v in self.vocab.items()}
+        self.reverse_vocab = {v: k for k, v in self.vocab.items()} # used for reverse lookup. from id to token
 
     def tokenize(self, text: str) -> List[str]:
         """
