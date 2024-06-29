@@ -18,3 +18,9 @@ class SwahiliTokenizer(BaseTokenizer):
     def vocab_size(self):
         return len(self.sp)
 
+tokenizer = SwahiliTokenizer('lib/spm_swahili_32k.model')
+
+tokens = tokenizer.tokenize('unajua kiswahili?')
+
+print(tokens)
+
