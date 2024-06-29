@@ -1,9 +1,11 @@
 import sentencepiece as spm
 from base_tokenizer import BaseTokenizer
 
-class SwahiliTokenizer(BaseTokenizer):
+class SentencePieceTokenizer(BaseTokenizer):
+    """
+    Kiswahili Sentence Piece Tokenizer
+    """
     def __init__(self, model_path):
-        super().__init__(model_path)
         self.sp = spm.SentencePieceProcessor()
         self.sp.Load(model_path)
         
@@ -17,4 +19,5 @@ class SwahiliTokenizer(BaseTokenizer):
         return [self.sp.IdToPiece(i) for i in ids]
     def vocab_size(self):
         return len(self.sp)
+
 
