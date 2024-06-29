@@ -18,8 +18,3 @@ class SwahiliTokenizer(BaseTokenizer):
     def vocab_size(self):
         return len(self.sp)
 
-tokenizer = SwahiliTokenizer('lib/spm_swahili.model')
-
-tokens = tokenizer.tokenize("Habari yako mwanangu")
-print(tokenizer.vocab_size)
-print(tokenizer.tokens_to_ids(tokens))
